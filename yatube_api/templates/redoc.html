@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>Yatube API — ReDoc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; padding: 0; }
+    .redoc-container { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div class="redoc-container">
+    <redoc spec-url="{% static 'redoc.yaml' %}"></redoc>
+  </div>
+  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+</body>
+</html>
